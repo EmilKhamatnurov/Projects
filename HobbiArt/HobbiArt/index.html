@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <metaname = "viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/obnulenie.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="site-info">
+        <div class="number">
+            <img class="number_icon" src="img/index/phone-icon.svg" alt="phone-icon">
+            <a class="number_phone-number" href="#">+7 (924) 765 28 20</a>
+        </div>
+        <div class="geolocation">
+            <img src="img/index/geo_tag.svg" alt="#" class="geolocation__icon">
+            <a href="#" class="geolocation__adress">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</a>
+        </div>
+        <div class="work-time">
+            <img src="img/index/clock-icon.svg" alt="#" class="clock__icon">
+            <a href="#" class="work__time">Ежедневно с 10:00 до 19:00</a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navigation">
+                <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Оплата и доставка</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Бонусная программа</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">О компании</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+            </nav>
+            <a class="header__logo" href="#"></a>
+            <div class="header__buttons">
+                <div class="search header__but">
+                    <input class="header__input" placeholder="Поиск товара" type="text">
+                    <img class="search-icon" src="img/index/search_button.svg" alt="search">
+                </div>
+                <div class="login_button header__but">
+                    <a class="header__button" href="#">Войти</a>
+                    <img class="person-icon" src="img/index/person_icon.svg" alt="person">
+                </div>
+                <div class="favorite-button header__but">
+                    <a class="header__button" href="#">Избранное</a>
+                    <img class="like-icon" src="img/index/like_icon.svg" alt="like">
+                </div>
+                <div class="busket-button header__but">
+                    <a class="header__button" href="#">Корзина</a>
+                    <img class="busket-icon" src="img/index/basket_icon.svg" alt="busket">
+                </div>
+            </div>
+        </header>
+        <main class="main"> 
+            <section>
+                <div class="main__image">
+                    <div class="main__info">
+                        <h1 class="main__title">Пряжа Macrametr</h1>
+                        <p class="main__text">
+                            Повседневная практика показывает, что укрепление и 
+                            развитие внутренней структуры обеспечивает широкому 
+                            кругу (специалистов) участие в формировании форм 
+                            воздействия. 
+                        </p>
+                        <a href="#" class="main__link">В каталог</a>
+                    </div>
+                </div>
+                <div class="switches">
+                    <p class="switches__label switches__label-one">Новинки</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="switches__label switches__label-two">популярное</p>
+                </div>
+            </section>
+            <section>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/main/Rectangle 5.png" alt="I">
+                        <p class="swiper-slide__title">Пряжа Macrametr</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/main/Rectangle 51.png" alt="I">
+                        <p class="swiper-slide__title">Кольца бамбук</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/main/Rectangle 52.png" alt="I">
+                        <p class="swiper-slide__title">Трикотажная пряжа Zefirka</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/main/Rectangle 53.png" alt="I">
+                        <p class="swiper-slide__title">Шпагат крученый</p>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/main/Rectangle 54.png" alt="I">
+                        <p class="swiper-slide__title">Джут «Арахна»</p>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                  </div>
+            </section>
+            <section class="catalog-wrap">
+                <div class="catalog">
+                    <div class="catalog__row">
+                        <div class="catalog__card catalog__card_selected">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                    </div>
+                    <div class="catalog__row">
+                        <div class="catalog__card catalog__card_selected">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                        <div class="catalog__card">
+                            <div class="catalog__card__text">
+                                <p class="card__text">Макраме <br>
+                                    <span class="card__price">от 250 ₽</span>
+                                </p>
+                                <a class="catalog__card__link" href="#">Подробнее</a>
+                            </div>
+                            <img class="catalog__card__image" src="img/main/item_1.png" alt="1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer__row">
+            <div class="footer__column">
+                <a class="site-logo" href="#"></a>
+                <div class="number">
+                    <img class="number_icon" src="img/index/phone-icon.svg" alt="phone-icon">
+                    <a class="number_phone-number footer-contact__link" href="#">+7 (924) 765 28 20</a>
+                </div>
+                <div class="geolocation">
+                    <img src="img/index/geo_tag.svg" alt="#" class="geolocation__icon">
+                    <a href="#" class="geolocation__adress footer-contact__link">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</a>
+                </div>
+                <div class="work-time">
+                    <img src="img/index/clock-icon.svg" alt="#" class="clock__icon">
+                    <a href="#" class="work__time footer-contact__link">Ежедневно с 10:00 до 19:00</a>
+                </div>
+                <div class="inst">
+                    <img src="img/index/inst-icon.png" alt="#" class="inst__icon">
+                    <a href="#" class="inst__account footer-contact__link">@hobbyart_dv</a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <ul class="footer__buttons">
+                    <li class="footer__item"><a class="footer__link" href="#">Каталог</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Акции</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Новинки</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Популярное</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Гарантия и возврат</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <ul class="footer__buttons">
+                    <li class="footer__item"><a class="footer__link" href="#">Оплата и доставка</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Бонусная программа</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">О компании</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Преимущества</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Личный кабинет</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <p class="footer__tezis">Узнавайте первым о новинках и новостях</p>
+                <div class="email__follow">
+                    <input class="email-input" placeholder="Ваш Email" type="text">
+                    <button class="follow-button">подписаться</button>
+                </div>
+                <p class="footer__agree">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                <p class="footer__text">© 2012-2021 ХОББИ АРТ — официальный интернет-магазин товаров для хобби. Все права защищены. 
+                Условия использования и политика конфиденциальности</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        slidesPerGroup: 5,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>
