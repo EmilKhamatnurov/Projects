@@ -17,3 +17,10 @@ btnNode.addEventListener('click', function(){
 operationSelectorNode.addEventListener('change', function () {
 	btnNode.focus()	
 });
+//! Нужно решить проблему с фокусом элементов: кнопка
+//! Добавить возможность использования клавишь при работе с select
+
+//* Можно попробовать использовать код ниже для множественной типизации listener 
+// ['click','ontouchstart'].forEach( function(evt) {
+//     element.addEventListener(evt, dosomething, false);
+// });
