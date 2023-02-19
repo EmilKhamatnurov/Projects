@@ -182,18 +182,20 @@ html {
 	border-top: 0;
 }
 
-.projects {}
+.projects {
+	padding-bottom: 106px;
+}
 
 .progects_wrapper {}
 
-.progects_title-wrapper {
+.section_title-wrapper {
 	display: flex;
 	align-items: center;
 	margin-bottom: 48px;
 	justify-content: space-between;
 }
 
-.projects_title {
+.section_title {
 	margin: 0;
 	position: relative;
 	font-size: 32px;
@@ -202,7 +204,7 @@ html {
 
 /* ! Обрати внимание на адаптив линии при изменении размера */
 /* Либо посмотри, как делать адаптивным псевдоэлемент */
-.projects_title::after {
+.section_title::after {
 	top: 50%;
 	left: 210px;
 	width: 511px;
@@ -237,6 +239,7 @@ html {
 	gap: 5px;
 	margin: 0;
 	display: flex;
+	flex-wrap: wrap;
 	max-width: 100%;
 	list-style: none;
 	padding-top: 8px;
@@ -248,15 +251,15 @@ html {
 .card_image-description-item {}
 
 .card_info {
-	max-width: 100%;
 	padding: 16px 0 16px 16px;
+	max-width: 100%;
 }
 
 .card_mane {
 	color: white;
 	font-size: 24px;
-	line-height: 31px;
 	margin-top: 0;
+	line-height: 31px;
 	margin-bottom: 24px;
 }
 
@@ -274,6 +277,67 @@ html {
 	border: 1px solid #ABB2BF;
 }
 
+/* SKILLS */
+.section_title__skills::after {
+	max-width: 239px;
+}
+
+.skills {
+	padding-bottom: 112px;
+}
+
+.skills_wrapper {
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+	justify-content: space-between;
+}
+
+.skills_image {
+	max-width: 349px;
+	max-height: 282px;
+}
+
+.skills_card-wrapper {
+	gap: 18px;
+	display: grid;
+	max-width: 584px;
+	/* grid-auto-flow: column; */
+
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill_card {
+	border: 1px solid #ABB2BF;
+	max-width: 180px;
+	box-sizing: border-box;
+}
+
+.second-сolumn-card {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.third-сolumn-card {
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.skill_name {
+	color: white;
+	padding: 8px;
+	border-bottom: 1px solid #ABB2BF;
+}
+
+.skill_list {
+	margin: 0;
+	padding: 0 0 8px 8px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.skill_item {}
 
 /* FOOTER */
 .footer {}
