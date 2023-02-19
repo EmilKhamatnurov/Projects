@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+body,
+html {
+	color: #ABB2BF;
+	height: 100%;
+	font-family: 'Fira Code', monospace;
+	font-weight: 400;
+	background-color: #282C33;
+}
+
+.button {
+	color: white;
+	border: 1px solid #C778DD;
+	padding: 8px 16px;
+	background: none;
+	font-weight: 500;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+	display: flex;
+	max-width: 1024px;
+	min-height: 100%;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	padding: 32px 0 8px 0;
+	justify-content: space-between;
+
+}
+
+.header_logo {
+	color: white;
+	text-decoration: none;
+}
+
+.header_site-logo {
+	width: 16px;
+	height: 16px;
+}
+
+.header_links {
+	display: flex;
+	justify-content: sb;
+}
+
+.header_navigation {}
+
+.header_link {
+	color: #ABB2BF;
+	text-decoration: none;
+}
+
+.header_link::before {
+	color: #C778DD;
+	content: "#";
+	display: inline;
+}
+
+.header_link:hover {
+	color: white;
+}
+
+.header_language-button {
+	background: none;
+	color: #ABB2BF;
+	border: none;
+
+}
+
+.header_language-button:hover {
+	cursor: pointer;
+	color: white;
+}
+
+.header_language-button::after {}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.main-information {
+	padding-top: 62px;
+}
+
+.main-information_wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 112px;
+	justify-content: space-between;
+}
+
+.main-information_info {}
+
+.accent {
+	color: #C778DD;
+}
+
+.main-information_title {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.main-information_subtitle {
+	display: block;
+	font-size: 16px;
+}
+
+.main-information_image-wrapper {
+	position: relative;
+}
+
+.main-information_image {
+	height: auto;
+	max-width: 457px;
+
+}
+
+.main-information_image-wrapper-text {
+	bottom: -29px;
+	border: 1px solid #ABB2BF;
+	padding: 8px 80px 8px 34px;
+	position: absolute;
+	background-color: #282C33;
+}
+
+.main-information_image-wrapper-text::before {
+	left: 10px;
+	width: 16px;
+	height: 16px;
+	content: "";
+	display: block;
+	position: absolute;
+	background: #C778DD;
+}
+
+.main-information_thesis-wrapper {
+	position: relative;
+	max-width: 712px;
+}
+
+.main-information_thesis-wrapper {
+	position: relative;
+	margin: 0 auto;
+}
+
+.main-information_thesis-wrapper p {
+	border: 1px solid white;
+	margin: 0 auto;
+	padding: 31px;
+	font-size: 24px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.main-information_thesis {
+	position: relative;
+	text-align: center;
+}
+
+.main-information_thesis-author {
+	right: 0px;
+	border-top: 0;
+	max-width: 194px;
+	position: absolute;
+}
+
+
+.footer {}
+
+.footer_info {}
+
+.footer_logo {}
+
+.footer_email {}
+
+.footer_thesis {}
+
+.footer_media {}
+
+.footer_media-title {}
+
+.footer_links {}
+
+.footer_link-item {}
+
+.footer_link {}
