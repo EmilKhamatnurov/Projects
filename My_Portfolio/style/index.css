@@ -24,7 +24,7 @@ html {
 }
 .wrapper {
 	margin: 0 auto;
-	padding: 0 10px 0 10px;
+	padding: 62px 10px 0 10px;
 	display: flex;
 	max-width: 1024px;
 	min-height: 100%;
@@ -32,8 +32,16 @@ html {
 }
 
 .header {
+	z-index: 10;
+	width: 100%;
+	position: fixed;
+	background-color: #282C33;
+}
+.header_wrapper {
 	display: flex;
-	padding: 32px 0 8px 0;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 32px 10px 32px 10px;
 	justify-content: space-between;
 
 }
@@ -52,9 +60,12 @@ html {
 	display: flex;
 	justify-content: sb;
 }
+.header_navigation {
+}
 
 .header_link {
 	color: #ABB2BF;
+	font-size: 14px;
 	text-decoration: none;
 }
 
@@ -69,9 +80,10 @@ html {
 }
 
 .header_language-button {
-	background: none;
+	font-size: 14px;
 	color: #ABB2BF;
 	border: none;
+	background: none;
 }
 
 .header_language-button:hover {
@@ -79,15 +91,13 @@ html {
 	color: white;
 }
 
-.header_language-button::after {}
-
 .main {
 	flex: 1 1 auto;
 }
 
 .main-information {
-	padding-top: 62px;
 	position: relative;
+	padding-top: 62px;
 }
 
 .main-information_wrapper {
@@ -598,5 +608,24 @@ html {
 	}
 }
 @media (max-width: 550px) {
-
+	.main-information {
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+	.main-information_image {
+		max-width: 307px;
+	}
+	.section_title::after {
+		width: 100px;
+	}
+	.section_title__skills::after {
+		width: 190px;
+	}
+	.section_title__about::after {
+		width: 190px;
+	}
+	.section_title__contacts::after {
+		width: 190px;
+	}
+	
 }
