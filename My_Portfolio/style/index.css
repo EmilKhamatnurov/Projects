@@ -16,10 +16,15 @@ html {
 	background: none;
 	font-weight: 500;
 }
-
+.section_title {
+	margin: 0;
+	position: relative;
+	font-size: 32px;
+	max-width: 195px;
+}
 .wrapper {
 	margin: 0 auto;
-	padding: 0 10px 0 10px;
+	padding: 62px 10px 0 10px;
 	display: flex;
 	max-width: 1024px;
 	min-height: 100%;
@@ -27,8 +32,16 @@ html {
 }
 
 .header {
+	z-index: 10;
+	width: 100%;
+	position: fixed;
+	background-color: #282C33;
+}
+.header_wrapper {
 	display: flex;
-	padding: 32px 0 8px 0;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 32px 10px 32px 10px;
 	justify-content: space-between;
 
 }
@@ -47,11 +60,12 @@ html {
 	display: flex;
 	justify-content: sb;
 }
-
-.header_navigation {}
+.header_navigation {
+}
 
 .header_link {
 	color: #ABB2BF;
+	font-size: 14px;
 	text-decoration: none;
 }
 
@@ -66,9 +80,10 @@ html {
 }
 
 .header_language-button {
-	background: none;
+	font-size: 14px;
 	color: #ABB2BF;
 	border: none;
+	background: none;
 }
 
 .header_language-button:hover {
@@ -76,13 +91,12 @@ html {
 	color: white;
 }
 
-.header_language-button::after {}
-
 .main {
 	flex: 1 1 auto;
 }
 
 .main-information {
+	position: relative;
 	padding-top: 62px;
 }
 
@@ -122,7 +136,18 @@ html {
 .main-information_image-wrapper {
 	position: relative;
 }
+.main-information_logo-image {
+	position: absolute;
+	left: 0;
+	z-index: 2;
+	top: 40px;
 
+}
+.main-information_dots-image {
+	position: absolute;
+	right: 0;
+	bottom: 70px;
+}
 .main-information_image {
 	height: auto;
 	max-width: 457px;
@@ -186,7 +211,6 @@ html {
 	padding-bottom: 106px;
 }
 
-.progects_wrapper {}
 
 .section_title-wrapper {
 	display: flex;
@@ -195,12 +219,6 @@ html {
 	justify-content: space-between;
 }
 
-.section_title {
-	margin: 0;
-	position: relative;
-	font-size: 32px;
-	max-width: 195px;
-}
 
 /* ! Обрати внимание на адаптив линии при изменении размера */
 /* Либо посмотри, как делать адаптивным псевдоэлемент */
@@ -224,6 +242,7 @@ html {
 	gap: 14px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card {
@@ -302,8 +321,6 @@ html {
 	gap: 18px;
 	display: grid;
 	max-width: 584px;
-	/* grid-auto-flow: column; */
-
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -347,8 +364,8 @@ html {
 
 .about_wrapper {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .about_info {
@@ -359,12 +376,23 @@ html {
 .about_text {
 	margin-bottom: 27px;
 }
+.about_image-wrapper {
+	position: relative;
+}
+.about_dots-image {
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+.about_dots-image2 {
+	right: 20px;
+	bottom: 45px;
+	position: absolute;
+}
 
 .contacts {
 	padding-bottom: 142px;
 }
-
-.section_title__contacts {}
 
 .contacts_wrapper {
 	display: flex;
@@ -391,12 +419,11 @@ html {
 	padding-left: 16px;
 }
 
-.contacts_list-item {}
 
 /* FOOTER */
 .footer {
 	max-width: 100%;
-	padding: 32px 0 32px 0;
+	padding: 32px 10px 32px 10px;
 	border-top: 1px solid #ABB2BF;
 }
 
@@ -407,16 +434,6 @@ html {
 	justify-content: space-between;
 	align-items: center;
 }
-
-.footer_info {}
-
-.header_logo {}
-
-.footer_email {}
-
-.footer_thesis {}
-
-.footer_media {}
 
 .footer_media-title {
 	font-size: 24px;
@@ -430,6 +447,185 @@ html {
 	list-style: none;
 }
 
-.footer_link-item {}
+@media (max-width: 1000px) {
+	.section_title {
+		font-size: 28px;
+	}
+	.main-information_info {
+		max-width: 500px;
+	}
+	.main-information_title {
+		font-size: 28px;
+		font-weight: 600;
+	}	
+	.main-information_image {
+		height: auto;
+		max-width: 400px;
+	}
+	.main-information_thesis-wrapper p {
+		padding: 24px;
+		font-size: 20px;
+	}
+}
+@media (max-width: 980px) {
+	.section_title::after {
+		width: 400px;
+	}
+	.skills_card-wrapper {
+		gap: 18px;
+		max-width: 584px;
+		grid-template-columns: 1fr 1fr;
+	}
+	.skill_card {
+		max-width: 180px;
+}
 
-.footer_link {}
+	.second-сolumn-card {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		}
+
+	.third-сolumn-card {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+}
+	.frameworks_card {
+		grid-row-start: 2;
+		grid-row-end: 3;
+	}
+}
+@media (max-width: 860px) {
+	.section_title {
+		font-size: 25px;
+	}
+	.main-information_wrapper {
+		flex-direction: column;
+	}
+	.main-information_title {
+		font-size: 32px;
+		font-weight: 600;
+	}
+	.main-information_image {
+		height: auto;
+		max-width: 457px;
+	}
+	.about_info {
+		max-width: 400px;
+		line-height: 27px;
+	}
+	.about_image {
+		max-width: 300px;
+	}
+}
+@media (max-width: 800px) {
+	.section_title {
+		font-size: 23px;
+	}
+	.section_title::after {
+		left: 150px;
+		width: 380px;
+	}
+	.skills_wrapper {
+		display: flex;
+		padding-left: 0;
+		justify-content: center;
+	}
+	.skills_image {
+		display: none;
+	}	
+	.skills_card-wrapper {
+		gap: 18px;
+		display: grid;
+		max-width: 750px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}	
+	.skill_card {
+		max-width: 250px;
+	}
+	
+	.second-сolumn-card {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+	
+	.third-сolumn-card {
+		grid-column-start: 3;
+		grid-column-end: 4;
+	}
+	
+	.skill_name {
+		color: white;
+		padding: 8px;
+		border-bottom: 1px solid #ABB2BF;
+	}
+	
+	.skill_list {
+		margin: 0;
+		padding: 0 0 8px 8px;
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+	}
+}
+@media (max-width: 730px) {
+	.contacts {
+		padding-bottom: 70px;
+	}
+	.main-information {
+		padding-bottom: 30px;
+	}
+	.main-information_info {
+		max-width: 340px;
+	}
+	.main-information_image {
+		height: auto;
+		max-width: 400px;
+	}
+	.main-information_button {
+		display: none;
+	}
+	.main-information_thesis-wrapper {
+		display: none;
+	}
+	.section_title::after {
+		width: 200px;
+	}
+	.about_wrapper {
+		justify-content: center;
+	}
+	.about_info {
+		max-width: 750px;
+		line-height: 27px;
+	}
+	.about_image-wrapper {
+		display: none;
+	}
+	.contacts_wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media (max-width: 550px) {
+	.main-information {
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
+	.main-information_image {
+		max-width: 307px;
+	}
+	.section_title::after {
+		width: 100px;
+	}
+	.section_title__skills::after {
+		width: 190px;
+	}
+	.section_title__about::after {
+		width: 190px;
+	}
+	.section_title__contacts::after {
+		width: 190px;
+	}
+	
+}
